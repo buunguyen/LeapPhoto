@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'LeapPhoto' target in the 'LeapPhoto' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

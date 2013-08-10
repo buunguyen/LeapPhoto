@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		360640ED17AEC1140082ADAC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360640EC17AEC1140082ADAC /* Cocoa.framework */; };
+		360640F717AEC1140082ADAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 360640F517AEC1140082ADAC /* InfoPlist.strings */; };
+		360640F917AEC1140082ADAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 360640F817AEC1140082ADAC /* main.m */; };
+		360640FD17AEC1140082ADAC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 360640FB17AEC1140082ADAC /* Credits.rtf */; };
+		3606410017AEC1140082ADAC /* LPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 360640FF17AEC1140082ADAC /* LPAppDelegate.m */; };
+		3606410317AEC1140082ADAC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3606410117AEC1140082ADAC /* MainMenu.xib */; };
+		3606410B17AEC12A0082ADAC /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3606410917AEC12A0082ADAC /* Quartz.framework */; };
+		3606410C17AEC12A0082ADAC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3606410A17AEC12A0082ADAC /* QuartzCore.framework */; };
+		3606411617AEC1DF0082ADAC /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3606411417AEC1DF0082ADAC /* LeapObjectiveC.mm */; };
+		3606411C17AEC7740082ADAC /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3606411B17AEC7740082ADAC /* libLeap.dylib */; };
+		36A4774A17AEC8730068DE2E /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3606411B17AEC7740082ADAC /* libLeap.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		36A4774917AEC85E0068DE2E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				36A4774A17AEC8730068DE2E /* libLeap.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		360640E917AEC1140082ADAC /* LeapPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeapPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		360640EC17AEC1140082ADAC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		360640EF17AEC1140082ADAC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		360640F017AEC1140082ADAC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		360640F117AEC1140082ADAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		360640F417AEC1140082ADAC /* LeapPhoto-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LeapPhoto-Info.plist"; sourceTree = "<group>"; };
+		360640F617AEC1140082ADAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		360640F817AEC1140082ADAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		360640FA17AEC1140082ADAC /* LeapPhoto-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeapPhoto-Prefix.pch"; sourceTree = "<group>"; };
+		360640FC17AEC1140082ADAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		360640FE17AEC1140082ADAC /* LPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAppDelegate.h; sourceTree = "<group>"; };
+		360640FF17AEC1140082ADAC /* LPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAppDelegate.m; sourceTree = "<group>"; };
+		3606410217AEC1140082ADAC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3606410917AEC12A0082ADAC /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		3606410A17AEC12A0082ADAC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3606411017AEC1DF0082ADAC /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leap.h; sourceTree = "<group>"; };
+		3606411217AEC1DF0082ADAC /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapMath.h; sourceTree = "<group>"; };
+		3606411317AEC1DF0082ADAC /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapObjectiveC.h; sourceTree = "<group>"; };
+		3606411417AEC1DF0082ADAC /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LeapObjectiveC.mm; sourceTree = "<group>"; };
+		3606411B17AEC7740082ADAC /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeap.dylib; path = /usr/local/leap/LeapSDK/lib/libLeap.dylib; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		360640E617AEC1140082ADAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3606411C17AEC7740082ADAC /* libLeap.dylib in Frameworks */,
+				3606410B17AEC12A0082ADAC /* Quartz.framework in Frameworks */,
+				3606410C17AEC12A0082ADAC /* QuartzCore.framework in Frameworks */,
+				360640ED17AEC1140082ADAC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		360640E017AEC1140082ADAC = {
+			isa = PBXGroup;
+			children = (
+				360640F217AEC1140082ADAC /* LeapPhoto */,
+				360640EB17AEC1140082ADAC /* Frameworks */,
+				360640EA17AEC1140082ADAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		360640EA17AEC1140082ADAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				360640E917AEC1140082ADAC /* LeapPhoto.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		360640EB17AEC1140082ADAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3606411B17AEC7740082ADAC /* libLeap.dylib */,
+				3606410917AEC12A0082ADAC /* Quartz.framework */,
+				3606410A17AEC12A0082ADAC /* QuartzCore.framework */,
+				360640EC17AEC1140082ADAC /* Cocoa.framework */,
+				360640EE17AEC1140082ADAC /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		360640EE17AEC1140082ADAC /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				360640EF17AEC1140082ADAC /* AppKit.framework */,
+				360640F017AEC1140082ADAC /* CoreData.framework */,
+				360640F117AEC1140082ADAC /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		360640F217AEC1140082ADAC /* LeapPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				360640FE17AEC1140082ADAC /* LPAppDelegate.h */,
+				360640FF17AEC1140082ADAC /* LPAppDelegate.m */,
+				3606410117AEC1140082ADAC /* MainMenu.xib */,
+				360640F317AEC1140082ADAC /* Supporting Files */,
+			);
+			path = LeapPhoto;
+			sourceTree = "<group>";
+		};
+		360640F317AEC1140082ADAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3606411017AEC1DF0082ADAC /* Leap.h */,
+				3606411217AEC1DF0082ADAC /* LeapMath.h */,
+				3606411317AEC1DF0082ADAC /* LeapObjectiveC.h */,
+				3606411417AEC1DF0082ADAC /* LeapObjectiveC.mm */,
+				360640F417AEC1140082ADAC /* LeapPhoto-Info.plist */,
+				360640F517AEC1140082ADAC /* InfoPlist.strings */,
+				360640F817AEC1140082ADAC /* main.m */,
+				360640FA17AEC1140082ADAC /* LeapPhoto-Prefix.pch */,
+				360640FB17AEC1140082ADAC /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		360640E817AEC1140082ADAC /* LeapPhoto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3606410617AEC1140082ADAC /* Build configuration list for PBXNativeTarget "LeapPhoto" */;
+			buildPhases = (
+				360640E517AEC1140082ADAC /* Sources */,
+				360640E617AEC1140082ADAC /* Frameworks */,
+				360640E717AEC1140082ADAC /* Resources */,
+				36A4774917AEC85E0068DE2E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeapPhoto;
+			productName = LeapPhoto;
+			productReference = 360640E917AEC1140082ADAC /* LeapPhoto.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		360640E117AEC1140082ADAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BN;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = BN;
+			};
+			buildConfigurationList = 360640E417AEC1140082ADAC /* Build configuration list for PBXProject "LeapPhoto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 360640E017AEC1140082ADAC;
+			productRefGroup = 360640EA17AEC1140082ADAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				360640E817AEC1140082ADAC /* LeapPhoto */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		360640E717AEC1140082ADAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360640F717AEC1140082ADAC /* InfoPlist.strings in Resources */,
+				360640FD17AEC1140082ADAC /* Credits.rtf in Resources */,
+				3606410317AEC1140082ADAC /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		360640E517AEC1140082ADAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360640F917AEC1140082ADAC /* main.m in Sources */,
+				3606410017AEC1140082ADAC /* LPAppDelegate.m in Sources */,
+				3606411617AEC1DF0082ADAC /* LeapObjectiveC.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		360640F517AEC1140082ADAC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				360640F617AEC1140082ADAC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		360640FB17AEC1140082ADAC /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				360640FC17AEC1140082ADAC /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		3606410117AEC1140082ADAC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3606410217AEC1140082ADAC /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3606410417AEC1140082ADAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3606410517AEC1140082ADAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3606410717AEC1140082ADAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeapPhoto/LeapPhoto-Prefix.pch";
+				INFOPLIST_FILE = "LeapPhoto/LeapPhoto-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/leap/LeapSDK/lib,
+					"\"/usr/local/leap/LeapSDK/lib/libc++\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3606410817AEC1140082ADAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeapPhoto/LeapPhoto-Prefix.pch";
+				INFOPLIST_FILE = "LeapPhoto/LeapPhoto-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/leap/LeapSDK/lib,
+					"\"/usr/local/leap/LeapSDK/lib/libc++\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		360640E417AEC1140082ADAC /* Build configuration list for PBXProject "LeapPhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3606410417AEC1140082ADAC /* Debug */,
+				3606410517AEC1140082ADAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3606410617AEC1140082ADAC /* Build configuration list for PBXNativeTarget "LeapPhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3606410717AEC1140082ADAC /* Debug */,
+				3606410817AEC1140082ADAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 360640E117AEC1140082ADAC /* Project object */;
+}
