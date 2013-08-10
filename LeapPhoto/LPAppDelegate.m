@@ -80,13 +80,13 @@ static NSSize kScreenSize;
     _currentFingerId = finger.id;
     [self move:finger.tipPosition];
 
-    // Don't perform click if there's any gap in focus
+    // Cancel click if there's any gap in focus
     if (_lastFrameTimestamp != -1 && frame.timestamp - _lastFrameTimestamp > 50000) {
         [_pastPositions removeAllObjects];
     }
     _lastFrameTimestamp = frame.timestamp;
     
-    // Perform clicks if focusing for about 2 seconds ~ 60 frames
+    // Perform clicks if focusing for 60 contiguous frames
     [_pastPositions addObject:finger.tipPosition];
     if (_pastPositions.count > 60) {
         [_pastPositions removeObjectAtIndex:0];
@@ -166,7 +166,6 @@ static NSSize kScreenSize;
 }
 
 - (void)click:(LeapVector *)vector {
-    NSLog(@"Click");
     CGPoint point = [self toScreen:vector];
 
     CGEventRef mouseEvent = CGEventCreateMouseEvent(kEventSource, kCGEventLeftMouseDown, point, kCGMouseButtonLeft);
@@ -178,10 +177,9 @@ static NSSize kScreenSize;
 }
 
 - (void)dblClick:(LeapVector *)vector {
-    NSLog(@"Double click");
     CGPoint point = [self toScreen:vector];
     
-    CGEventRef mouseEvent = CGEventCreateMouseEvent(NULL, kCGEventLeftMouseDown, point, kCGMouseButtonLeft);
+    CGEventRef mouseEvent = CGEventCreateMouseEvent(kEventSource, kCGEventLeftMouseDown, point, kCGMouseButtonLeft);
     CGEventPost(kCGHIDEventTap, mouseEvent);
     CGEventSetType(mouseEvent, kCGEventLeftMouseUp);
     CGEventPost(kCGHIDEventTap, mouseEvent);
@@ -195,7 +193,6 @@ static NSSize kScreenSize;
 }
 
 - (void)press:(CGKeyCode)code {
-    NSLog(@"Press %d", code);
     CGEventRef keydown = CGEventCreateKeyboardEvent(kEventSource, code, true);
     CGEventRef keyup = CGEventCreateKeyboardEvent(kEventSource, code, false);
     
